@@ -1,6 +1,6 @@
 <?php declare ( strict_types = 1 );
-
 include_once "functions.php";
+
 /*
 $name = "Mosabbir";
 $age = 34;
@@ -1244,4 +1244,74 @@ echo $z;
  */
 
 // echo $_SERVER['SERVER_NAME'];
+
 // echo $_SERVER['QUERY_STRING'];
+
+// for ( $i = 1; $i <= 5; $i++ ) {
+
+//     for ( $j = 1; $j <= $i; $j++ ) {
+
+//         echo " * ";
+
+//     }
+
+//     echo PHP_EOL;
+
+// }
+
+// for ( $i = 1; $i <= 5; $i++ ) {
+
+//     for ( $j = 1; $j <= $i; $j++ ) {
+
+//         echo $i . " ";
+
+//     }
+
+//     echo PHP_EOL;
+
+// }
+
+// for ( $i = 1; $i <= 5; $i++ ) {
+
+//     for ( $j = 1; $j <= $i; $j++ ) {
+
+//         echo $j . " ";
+
+//     }
+
+//     echo PHP_EOL;
+
+// }
+
+// for ( $i = 5; $i >= 1; $i-- ) {
+
+//     for ( $j = 1; $j <= $i; $j++ ) {
+
+//         echo " * ";
+
+//     }
+
+//     echo PHP_EOL;
+
+// }
+
+// for ( $i = 5; $i >= 1; $i-- ) {
+
+//     for ( $j = 1; $j <= $i; $j++ ) {
+
+//         echo $i . " ";
+
+//     }
+
+//     echo PHP_EOL;
+
+// }
+
+for ( $i = 5; $i >= 1; $i-- ) {
+    for ( $j = 1; $j <= $i; $j++ ) {
+        echo $j . " ";
+
+    }
+
+    echo PHP_EOL;
+}
