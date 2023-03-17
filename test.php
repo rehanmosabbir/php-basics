@@ -1307,21 +1307,284 @@ echo $z;
 
 // }
 
-for ( $i = 1; $i <= 4; $i++ ) {
+// for ( $i = 1; $i <= 4; $i++ ) {
 
-    for ( $j = 1; $j <= $i; $j++ ) {
-        echo $j . " ";
+//     for ( $j = 1; $j <= $i; $j++ ) {
 
-    }
+//         echo $j . " ";
 
-    echo PHP_EOL;
-}
+//     }
 
-for ( $i = 5; $i >= 1; $i-- ) {
-    for ( $j = 1; $j <= $i; $j++ ) {
-        echo $j . " ";
+//     echo PHP_EOL;
 
-    }
+// }
 
-    echo PHP_EOL;
-}
+// for ( $i = 5; $i >= 1; $i-- ) {
+
+//     for ( $j = 1; $j <= $i; $j++ ) {
+
+//         echo $j . " ";
+
+//     }
+
+//     echo PHP_EOL;
+
+// }
+
+// $filename = 'C:\Users\REHAN\OneDrive\Desktop\php-basics\name.txt';
+
+// if ( is_readable( $filename ) ) {
+
+// // echo getcwd();
+
+//     $fp = fopen( $filename, 'r' );
+
+//     while ( $line = fgets( $fp ) ) {
+
+//         echo $line;
+
+//     }
+
+// // rewind( $fp );
+
+//     fseek( $fp, 8 );
+
+// // fseek($fp,-1,SEEK_END);
+
+//     echo PHP_EOL;
+
+//     while ( $line = fgets( $fp, 3 ) ) {
+
+//         echo $line . "-";
+
+//     }
+
+//     fclose( $fp );
+
+//     echo PHP_EOL;
+
+//     $data = file( $filename );
+
+//     print_r( $data );
+
+//     echo PHP_EOL;
+
+//     echo $data[3];
+
+//     echo PHP_EOL;
+
+//     $data = file_get_contents( $filename );
+
+//     echo $data;
+
+// }
+
+// $filename = 'C:\Users\REHAN\OneDrive\Desktop\php-basics\name.txt';
+
+// $existingData = file_get_contents( $filename );
+
+// if ( is_writable( $filename ) ) {
+
+//     $fp = fopen( $filename, 'a' );
+
+// // fwrite( $fp, "Meheran\n" );
+
+// // fwrite( $fp, $existingData );
+
+//     fwrite( $fp, "Venus\n" );
+
+//     fwrite( $fp, "Earth\n" );
+
+//     fclose( $fp );
+
+// }
+
+// $filename = 'C:\Users\REHAN\OneDrive\Desktop\php-basics\name.txt';
+
+// $fp = fopen( $filename, "a+" );
+
+// $line = fgets( $fp );
+
+// echo $line;
+
+// echo PHP_EOL;
+
+// fwrite( $fp, "Venus\n" );
+
+// fclose( $fp );
+
+// $filename = 'C:\Users\REHAN\OneDrive\Desktop\php-basics\name.txt';
+
+// file_put_contents( $filename, "Mars\n", FILE_APPEND | LOCK_EX );
+// file_put_contents( $filename, "Jupiter\n", FILE_APPEND | LOCK_EX );
+// $filename = 'C:\Users\REHAN\OneDrive\Desktop\php-basics\name.txt';
+
+// $students = [
+//     [
+//         'fname' => 'Mosabbir',
+//         'lname' => 'Rehan',
+//         'age'   => 34,
+//         'class' => 10,
+//         'roll'  => 2,
+//     ],
+//     [
+//         'fname' => 'Mosaddek',
+//         'lname' => 'Rifat',
+//         'age'   => 27,
+//         'class' => 7,
+//         'roll'  => 21,
+//     ],
+//     [
+//         'fname' => 'Mozahid',
+//         'lname' => 'Rakib',
+//         'age'   => 36,
+//         'class' => 12,
+//         'roll'  => 25,
+//     ],
+// ];
+
+// $fp = fopen( $filename, 'w' );
+
+// foreach ( $students as $student ) {
+
+//     $data = sprintf( "%s %s %s %s %s\n", $student['fname'], $student['lname'], $student['age'], $student['class'], $student['roll'] );
+
+//     fwrite( $fp, $data );
+
+// }
+
+// $fp = fopen( $filename, 'w' );
+
+// foreach ( $students as $student ) {
+
+//     // $data = sprintf( "%s %s %s %s %s\n", $student['fname'], $student['lname'], $student['age'], $student['class'], $student['roll'] );
+
+//     fputcsv( $fp, $student );
+
+// }
+
+// $fp = fopen( $filename, 'r' );
+
+// while ( $data = fgets( $fp ) ) {
+
+//     $student = explode( ' ', $data );
+
+//     printf( "Name = %s %s\n Age = %s\n Class = %s\n Roll = %s\n\n", $student[0], $student[1], $student[2], $student[3], $student[4] );
+
+// }
+
+// $fp = fopen( $filename, 'r' );
+
+// while ( $student = fgetcsv( $fp, ) ) {
+
+//     printf( "Name = %s %s\n Age = %s\n Class = %s\n Roll = %s\n\n", $student[0], $student[1], $student[2], $student[3], $student[4] );
+
+// }
+
+// fclose( $fp );
+
+// $student = [
+
+//     'fname' => 'Rezwana',
+
+//     'lname' => 'Sarmin',
+
+//     'age'   => 34,
+
+//     'class' => 12,
+
+//     'roll'  => 25,
+
+// ];
+
+// $fp = fopen( $filename, 'a' );
+
+// fputcsv( $fp, $student );
+
+// fclose( $fp );
+
+// $data = file( $filename );
+
+// print_r( $data );
+
+// unset( $data[1] );
+
+// foreach ( $data as $line ) {
+
+//     $fp = fopen( $filename, 'w' );
+
+//     fwrite( $fp, $line );
+
+// }
+
+// fclose( $fp );
+
+// $filename = 'C:\Users\REHAN\OneDrive\Desktop\php-basics\name.txt';
+
+// $students = [
+//     [
+//         'fname' => 'Mosabbir',
+//         'lname' => 'Rehan',
+//         'age'   => 34,
+//         'class' => 10,
+//         'roll'  => 2,
+//     ],
+//     [
+//         'fname' => 'Mosaddek',
+//         'lname' => 'Rifat',
+//         'age'   => 27,
+//         'class' => 7,
+//         'roll'  => 21,
+//     ],
+//     [
+//         'fname' => 'Mozahid',
+//         'lname' => 'Rakib',
+//         'age'   => 36,
+//         'class' => 12,
+//         'roll'  => 25,
+//     ],
+// ];
+
+// $data = serialize( $students );
+// file_put_contents( $filename, $data, LOCK_EX );
+
+// $dataFromFile = file_get_contents( $filename );
+// $allStudents = unserialize( $dataFromFile );
+// print_r( $allStudents );
+
+// unset( $allStudents[1] );
+
+// $data = serialize( $allStudents );
+// file_put_contents( $filename, $data, LOCK_EX );
+$filename = 'C:\Users\REHAN\OneDrive\Desktop\php-basics\name.txt';
+
+$students = [
+    [
+        'fname' => 'Mosabbir',
+        'lname' => 'Rehan',
+        'age'   => 34,
+        'class' => 10,
+        'roll'  => 2,
+    ],
+    [
+        'fname' => 'Mosaddek',
+        'lname' => 'Rifat',
+        'age'   => 27,
+        'class' => 7,
+        'roll'  => 21,
+    ],
+    [
+        'fname' => 'Mozahid',
+        'lname' => 'Rakib',
+        'age'   => 36,
+        'class' => 12,
+        'roll'  => 25,
+    ],
+];
+
+// $encodedData = json_encode( $students );
+// file_put_contents( $filename, $encodedData, LOCK_EX );
+
+$data = file_get_contents( $filename );
+$allStudents = json_decode( $data );
+print_r( $allStudents );
